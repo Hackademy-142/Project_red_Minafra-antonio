@@ -1,0 +1,230 @@
+
+/* variabili css per i colori */
+:root {
+    --det-color: rgb(236, 236, 236);
+    --sec-color:#C67F7F;
+    --acc-color: darkred;
+}
+/* testo */
+.tx-1 {
+    color: var(--det-color);
+}
+
+.tx-2 {
+    color: var(--sec-color);
+}
+
+.tx-acc {
+    color: var(--acc-color);
+}
+/* bgc */
+
+.bg-1 {
+    background-color: var(--det-color);
+}
+
+.bg-2 {
+    background-color: var(--sec-color);
+}
+
+.bg-acc {
+    background-color: var(--acc-color);
+}
+/* border */
+.borde-1 {
+    border-bottom: 4px solid var(--det-color);
+}
+
+.borde-2 {
+    border-bottom: 4px solid var(--sec-color);
+}
+
+.borde-acc {
+    border-bottom: 4px solid var(--acc-color);
+}
+
+.nova_square {
+    font-family: "Nova Square", sans-serif;
+}
+.rajdhani {
+    font-family: "Rajdhani", sans-serif;
+}
+.img_logo {
+    width: 120px;
+
+}
+#content {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(236, 236, 236),rgba(236, 236, 236,0)),url(./media/mountains2.png),url(./media/switzerland-862870_1920.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title {
+    font-size: 70px;
+    letter-spacing: 100px;
+}
+@media screen and (max-width:767px){
+    .title {
+        font-size: 70px;
+        letter-spacing: 10px;
+    }
+}
+/* sezione paragrafo da aggiustare */
+.virgolette {
+    position: relative;
+}
+.virgolette::before {
+    content: open-quote;
+    color: darkred;
+    font-size: 70px;
+    position: absolute;
+    top: -35px;
+    left: -20px;
+}
+.virgolette::after{
+    content: close-quote;
+    color: darkred;
+    font-size: 70px;
+    position: absolute;
+    top: 30px;
+    left: 80%;
+    right: -22%;
+}
+@media screen and (max-width:400px) {
+    .virgolette::after{
+        content: close-quote;
+        color: darkred;
+        font-size: 70px;
+        position: absolute;
+        top: 70%;
+        left: 85%;
+        right: -25%;
+    }
+}
+.tx_para {
+    width: 60%;
+}
+/* allineamento icone  */
+.position_collum {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:767px) {
+    .position_collum {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .position_collum {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+.icone {
+    max-width: 40px;
+    max-height: 40px;
+    color: darkred;
+    font-size: 30px;
+}
+.collum {
+    border-bottom: darkred 4px solid;
+}
+.riga {
+    background-color: darkred;
+    position: relative;
+    width: 200px;
+    height: 5px;
+    box-sizing: border-box;
+}
+
+.cerchio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid darkred;
+    background-color: white;
+}
+.img_woodWhite {
+    width: 100%;
+}
+.myButton {
+    position: absolute;
+    left: 43%;
+    top: 50%;
+}
+@media screen and (max-width:568px) {
+    .myButton {
+        position: absolute;
+        left: 23%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1260px) {
+    .myButton {
+        position: absolute;
+        left: 40%;
+    }
+}
+.img_single {
+    width: 100%;
+    background: url(./media/single.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+@media screen and (max-width:676px) {
+    .img_single {
+        width: 100%;
+        background: url(./media/single.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+}
+.riga_sinistra {
+    border-left: 4px solid darkred;
+    position: relative;
+
+}
+.cerchio2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid darkred;
+    background-color: white;
+    position: relative;
+    left: -24px;
+    top: 25px;
+}
+.img_team {
+    width: 200px;
+    height: 200px;
+    border-radius: 50% !important;
+    border: 4px solid darkred;
+    padding: 10px;
+}
+.ul_team {
+    list-style-type: none;
+    display: flex;
+    justify-content:space-evenly;
+}
+.img_other {
+    width: 100%;
+
+}
+.footer {
+    position: relative;
+}
+.pdg {
+    padding: 0px !important;
+}
